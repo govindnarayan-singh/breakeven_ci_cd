@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+.dashboard-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #16c79a, #0ea5e9);
+  padding: 60px 24px;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+/* Title */
+.dashboard-title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* Top-right buttons */
+.dashboard-top-actions {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  gap: 12px;
+}
+
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+  transition: all 0.25s ease;
+}
+
+.icon-btn.blue {
+  background: #2563eb;
+}
+
+.icon-btn.red {
+  background: #dc2626;
+}
+
+.icon-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.35);
+}
+
+/* Grid */
+.dashboard-grid {
+  max-width: 1150px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 26px;
+}
+
+/* Card */
+.dashboard-card {
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+}
+
+.dashboard-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 22px 40px rgba(0,0,0,0.28);
+}
+
+/* Header */
+.dashboard-card-header {
+  background: linear-gradient(135deg, #6366f1, #7c3aed);
+  color: white;
+  text-align: center;
+  padding: 18px;
+  font-weight: 600;
+}
+
+/* Body */
+.dashboard-card-body {
+  padding: 18px;
+  font-size: 14px;
+  color: #334155;
+}
+
+.dashboard-card-body p {
+  margin: 6px 0;
+}
+
+.dashboard-card-body hr {
+  border: none;
+  height: 1px;
+  background: #e5e7eb;
+  margin: 12px 0;
+}
+
+/* Profit/Loss */
+.profit {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.loss {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.like-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+/* LIKE */
+.like-btn {
+  background: #e80000;
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.like-btn:hover {
+  background: #00a32c;
+}
+
+/* DISLIKE */
+.dislike-btn {
+  background: #00a32c; 
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dislike-btn:hover {
+  background: #f30202;
+}
+
+
+/* Loading */
+.loading {
+  color: white;
+  text-align: center;
+  margin-top: 80px;
+  font-size: 18px;
+}
