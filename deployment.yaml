@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: react-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: breakeven
+  template:
+    metadata:
+      labels:
+        app: breakeven
+    spec:
+      containers:
+      - name: react-container
+        image: my-app
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 80
